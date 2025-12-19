@@ -128,13 +128,14 @@ h1{
   color: #b5e2ff;
 }
 .job_description{
-  display: flex;
+  display: block;      /* instead of flex */
   max-width: 600px;
-  width: 90%;
+  width: 100%;         /* use full width of parent */
   margin: 1rem auto;
   padding: 0 1rem;
   line-height: 1.4;
-  word-wrap: break-word;
+  word-wrap: break-word; /* breaks long words */
+  overflow-wrap: break-word; /* extra safety */
   font-size: 1.1em;
 
 
@@ -193,12 +194,11 @@ h1{
 }
 
 .proj-image {
+  max-width: 500px;
   flex-direction: column;
   align-items: center;
-  max-width: 500px;
-  height: auto;
   border: 1px solid transparent;
-  border-radius: 30px;
+  border-radius: 50px;
   margin-top: 20px;
     transition: border-color 0.25s;
 
@@ -494,9 +494,9 @@ h1{
   margin-left: 0px;
 }
 .proj-image {
-  max-width: 500px;
+  max-width: 300px;
   height: auto;
- margin: 0 auto 20px auto;   
+ margin: 0  auto;   
  border: 1px solid transparent;
   border-radius: 30px;
   margin-top: 20px;
@@ -514,12 +514,10 @@ h1{
   .proj-naming2,
   .proj-title,
   .proj-skills {
-    margin-left: 0;  
     flex-direction:column;
-  align-items: center;    /* remove all fixed offsets */
     text-align: center; 
-    padding: auto;
-    margin: auto;       /* optional, center text on mobile */
+    margin: auto;  
+    padding: 0 px; 
   }
 
 
@@ -536,14 +534,20 @@ h1{
   }
 
   .exp-image {
-    max-width: 80%;          /* smaller, responsive width */
-    margin: 0 auto;
+     margin-left: 0;  
+    flex-direction:column;
+  align-items: center;    /* remove all fixed offsets */
+    text-align: center; 
+    padding: auto;
+    margin: auto;  
   }
 
-  .job-description {
-    font-size: 0.95em; /* smaller text on small devices */
-    width: 50%;
-  }
+  .job_description {
+    width: 70%;
+    max-width: 60%;    /* allow smaller width on mobile */
+    padding: 0 10px;
+  } /* center job descriptions */
+  
 
   .skills {
     margin: 0.5rem auto;     /* center skills horizontally */

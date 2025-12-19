@@ -215,9 +215,9 @@ const sendEmail = (e) => {
             </div>
           </div>
           <div className='project'>
-            <a href='https://github.com/Mattquin45/ESP32-relay-light-switch-with-BLE' className='link'><video className="video" src={Video} controls muted /></a>
+            <video className="video" src={Video} controls muted />
             <div className='projectvid-text'>
-              <h2 className='projvid-title'>Light Switch Automation App</h2>
+              <a href='https://github.com/Mattquin45/ESP32-relay-light-switch-with-BLE' className='link'><h2 className='projvid-title'>Light Switch Automation App</h2></a>
               <p className='projvid-naming'>February 2025 </p>
               <p className='projvid-description'> Collaborated with a 4-member team to design and develop an AI-powered legislative tracking application that combined real-time data visualization with intelligent policy analysis, earning 1st Place – Software Development & AI Integration. Led the implementation of secure, cross-platform authentication using Dart, Swift, and Firebase, ensuring reliable and protected access across devices. Integrated Google Gemini AI to power an in-app chatbot that delivers real-time legislative summaries, policy insights, and contextual explanations, significantly improving user accessibility and understanding of complex legislation.</p>
             
