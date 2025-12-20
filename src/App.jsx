@@ -130,7 +130,7 @@ const sendEmail = (e) => {
           </div>
 
           <div className={`content__section ${activeTab === 3 ? "visible" : ""}`} data-tab="3">
-            <a href='https://github.com/Mattquin45/Pokemon-type-battle-Data-model' className='link'><h3>Breakthrough Tech - Pokemon Type Simulator</h3></a>
+            <a href='https://github.com/Mattquin45/Pokemon-type-battle-Data-model' className='link'><h3 h3 className='job-header'>Breakthrough Tech - Pokemon Type Simulator</h3></a>
                 <p className='job_title'> Project contributor</p>
                 <p className='job_description'>
                   Cleaned, transformed, and validated large, complex datasets using Python, Pandas, and NumPy to ensure high data quality and reliability for analysis and modeling. Performed in-depth exploratory data analysis (EDA) through structured weekly labs, leveraging Matplotlib and Seaborn to uncover trends, correlations, and anomalies in real-world datasets. Applied data wrangling, statistical analysis, and visualization techniques in a comprehensive project to generate actionable insights, clearly communicating results through a formal presentation and detailed written report.
@@ -160,10 +160,10 @@ const sendEmail = (e) => {
           <h2 id='projects'>Projects</h2>
           <div className='project'>
             <a href='https://github.com/Mattquin45/Suggestion-calander'><img className="proj-image" src="/calendar.png" alt="Photo" /></a>
-            
-            
+           
               <h2 className='proj-title'>Path manager</h2>
-              <p className='proj-naming2'>March 2025 - Present</p>
+            <p className='proj-naming2'>March 2025 - Present</p>
+            <div className='project-text'>
               <p className='proj-description'> Designed and deployed a responsive React-based calendar application enabling customizable scheduling, automated PDF exports, and email reminders to improve user time management. Integrated React-PDF, TypeScript, and Node.js for document generation and notification workflows, and implemented secure authentication and data persistence using Spring Boot, PostgreSQL, and JWT-based REST APIs.</p>
             
             <div className='proj-skills'>
@@ -179,6 +179,9 @@ const sendEmail = (e) => {
               <button className='skills'> RESTAPI</button>
               </div>
             </div>
+            </div>
+            
+          
           
           
           <div className='project'>

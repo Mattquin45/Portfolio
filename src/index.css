@@ -145,7 +145,7 @@ h1{
 .gap{
   padding: 10px;
 }
-.skills{
+.skills {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -161,13 +161,14 @@ h1{
   transition: border-color 0.25s;
   height: 28px;
 }
-.skills:hover {
-  
-  border-color: #646cff;
-}
 
-.skill_line{
-  padding-top: -20px;
+.skill_line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;        /* 🔑 spacing */
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .exp-image {
@@ -204,10 +205,10 @@ h1{
 
 }
 .project-text {
-  flex-direction: column;
-  max-width: 500px; 
-  align-items: center;
-  margin: auto;
+   display: flex;
+  flex-direction: column;   /* 🔑 vertical */
+  gap: 1rem;
+  max-width: 500px;
 }
 
 
@@ -240,13 +241,16 @@ h1{
   color: #E2E5DE;  
   margin-left:730px;
   margin-top: -220px;
-  margin-bottom: 40px;
 
   
 }
-.proj-skills{
-  margin-top: -40px;
-  margin-left:700px;
+.proj-skills {
+ display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  width: 100%;
+  margin-left:740px;
 }
 .proj-naming2{
   display: flex;
@@ -285,6 +289,7 @@ h1{
 }
 .projectvid-text {
   display: flex;
+
   flex-direction: column;
   max-width: 450px;
   margin-left: 360px;
@@ -321,6 +326,7 @@ h1{
   display: flex;
   flex-wrap: wrap;
   margin-top: 1.5rem;
+  gap: 1rem;
 }
 
 .contact {
@@ -487,6 +493,7 @@ h1{
 }
 .projectvid-text {
   flex-direction:column;
+  
   align-items: center;
   text-align: center;
   max-width: 450px;
@@ -512,8 +519,8 @@ h1{
 .proj-description,
   .proj-naming,
   .proj-naming2,
-  .proj-title,
-  .proj-skills {
+  .proj-title
+{
     flex-direction:column;
     text-align: center; 
     margin: auto;  
@@ -530,6 +537,9 @@ h1{
     flex-direction: column;  /* stack vertically */
     align-items: center;     /* center all items */
     text-align: center;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
     gap: 1rem;
   }
 
@@ -550,13 +560,35 @@ h1{
   
 
   .skills {
-    margin: 0.5rem auto;     /* center skills horizontally */
+    margin: 0.5rem auto; 
+    width: auto; 
+    padding: auto;   /* center skills horizontally */
   }
-  .skill_line{
+  
+    .skill_line {
     display: flex;
-  gap: 7px;
-  margin: 0 auto;
-  padding: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* center skills */
+  margin-top: 1.5rem;
+  gap: 1rem;
+    width: 60%;
+    margin: auto;
+  }
+  
+.job-header{
+  width:90%;
+  align-items: center;
+  margin:  30px auto;
 }
+.proj-skills {
+    display: flex;
+    flex-wrap: wrap;        /* single row */
+    justify-content: center;
+    gap: 1rem;
+    overflow-x: auto;         /* horizontal scroll if needed */
+    padding-bottom: 5px;
+    margin: auto;
+  }
 
 }
